@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class BasicAuth {
+public class Base {
 
     public WebDriver driver;
     public WebDriverWait wait;
@@ -27,5 +27,5 @@ public class BasicAuth {
     public void exit(){
         System.out.println("Test Complete");
     }
-
+    
 }
