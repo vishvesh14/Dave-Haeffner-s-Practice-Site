@@ -13,7 +13,6 @@ public class BaseAuthLocators extends Base{
     @FindBy(xpath = "//*[@id=\"content\"]/ul/li[2]/a")
     WebElement BasicAuthLink;
 
-
     public BaseAuthLocators(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);

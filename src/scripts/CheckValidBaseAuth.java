@@ -1,17 +1,22 @@
 package scripts;
 
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
+import pages.BaseAuthLocators;
 import testBase.Base;
-import scripts.CheckValidBaseAuth;
 import org.openqa.selenium.Alert;
 
-public class CheckValidBaseAuth extends BaseAuthLocators{
+import java.io.IOException;
+
+
+public class CheckValidBaseAuth extends Base{
 
     @Test
-    public void BaseAuthSuccess(){
+    public void BaseAuthSuccess() throws IOException {
 
+        BaseAuthLocators BaseAuthObj = new BaseAuthLocators(driver);
 
-        //Alert simpleAlert = driver.switchTo().alert();
-        //String alertText = simpleAlert.getText();
+        BaseAuthObj.clickBasicAuthLink();
+        Runtime.getRuntime().exec("C:\\Users\\vishvesh.sawant\\Desktop\\AutoIT Scripts\\HandleAuthenicationWindow.exe");
     }
 }
